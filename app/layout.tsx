@@ -13,8 +13,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://acai-pote-ulx1.vercel.app"),
+
   title: "Açaí no Pote",
   description: "A melhor loja de açaí da região",
+
+  openGraph: {
+    title: "Açaí no Pote",
+    description: "A melhor loja de açaí da região",
+    url: "https://acai-pote-ulx1.vercel.app",
+    siteName: "Açaí no Pote",
+    images: [
+      {
+        url: "https://acai-pote-ulx1.vercel.app/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Açaí no Pote",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Açaí no Pote",
+    description: "A melhor loja de açaí da região",
+    images: ["https://acai-pote-ulx1.vercel.app/logo.png"],
+  },
 };
 
 export default function RootLayout({
@@ -47,12 +73,13 @@ export default function RootLayout({
           <p>🚚 Entrega Grátis</p>
         </footer>
 
-       <a
-  href="https://wa.me/5531971267579"
-  className="fixed ..."
->
-  WhatsApp
-
+        <a
+          href="https://wa.me/5531971267579"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-3 rounded-full shadow-lg font-bold z-50"
+        >
+          WhatsApp
         </a>
       </body>
     </html>
