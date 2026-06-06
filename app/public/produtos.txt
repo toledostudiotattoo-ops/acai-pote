@@ -1,0 +1,31 @@
+import Image from "next/image";
+const produtos = [
+  {
+    id: 1,
+    nome: "2 Sucos Açaí 300ml",
+    preco: 20,
+    imagem: "/produtos/acai-garrafa.jpg",
+    descricao: "Promoção especial"
+  },
+  {
+    id: 2,
+    nome: "2 Açaís 500ml",
+    preco: 30,
+    imagem: "/produtos/acai-morango.jpg",
+    descricao: "Com frutas frescas"
+  },
+  {
+    id: 3,
+    nome: "2 Açaís 700ml",
+    preco: 65,
+    imagem: "/produtos/acai-premium.jpg",
+    descricao: "Super promoção"
+  },
+  {
+    id: 4,
+    nome: "Açaí 1 Litro",
+    preco: 60,
+    imagem: "/produtos/acai-premium.jpg",
+    descricao: "Ideal para compartilhar"
+  }
+];
